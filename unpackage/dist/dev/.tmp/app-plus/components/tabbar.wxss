@@ -1,0 +1,35 @@
+
+.tabbar.data-v-14fa8c33{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.tabbar-item.data-v-14fa8c33{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	text-align: center;
+	background-color: #000000;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+}
+.icon-box.data-v-14fa8c33{
+	width: 60%;
+	height: 30px;
+	background-color: #fff;
+	color: #000000;
+	margin: 10px 20%;
+	line-height: 30px;
+	border-radius: 5px;
+	font-size: 15px
+}
+

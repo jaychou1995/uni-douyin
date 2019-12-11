@@ -1,0 +1,26 @@
+
+.videoList.data-v-bd1a31f6,.swiper-box.data-v-bd1a31f6,.swiper.data-v-bd1a31f6,swiper-item.data-v-bd1a31f6,.swiper-item.data-v-bd1a31f6{
+		height: 100%;
+		width: 100%;
+}
+/* 	.swiper-box{
+		height: 100%;
+		width: 100%;
+	}
+	.swiper{
+		width: 100%;
+		height: 100%;
+	}
+	swiper-item{
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-item{
+		width: 100%;
+		height: 100%;
+	} */
+/* 	.videoList{
+		height: 100%;
+		width: 100%;
+	} */
+
