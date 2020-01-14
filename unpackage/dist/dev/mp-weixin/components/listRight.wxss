@@ -1,0 +1,80 @@
+
+.list-right{
+	color: #FFFFFF;
+	width: 100rpx;
+	margin: 0 auto;
+}
+.autor-img{
+	height: 100rpx;
+	width: 100rpx;
+	margin-bottom: 40rpx;
+	position: relative;
+}
+.img{
+	border-radius: 50%;
+	height: 100rpx;
+	width: 100rpx;
+	border: 1px solid #fff;
+}
+.around{
+	height: 80rpx;
+	width: 80rpx;
+	margin: 30rpx auto 0 auto;
+	-webkit-animation: rotate 1.5s linear 0.2s infinite;
+	        animation: rotate 1.5s linear 0.2s infinite;
+}
+.img-music{
+	border-radius: 50%;
+	height: 80rpx;
+	width: 80rpx;
+}
+.right-box{
+	width: 100rpx;
+	height: 80rpx;
+	margin-top: 20rpx;
+	text-align: center;
+	line-height: 80rpx;
+	font-size: 33px;
+}
+.number{
+	font-size: 10px;
+	text-align: center;
+}
+.add-follow{
+	width: 36rpx;
+	height: 36rpx;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	text-align: center;
+	line-height: 36rpx;
+	font-size: 12px;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+@-webkit-keyframes rotate{
+0%{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100%{
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+@keyframes rotate{
+0%{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100%{
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+
+

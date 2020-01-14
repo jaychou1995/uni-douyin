@@ -2,10 +2,16 @@
 	<view class="videoList">
 		{{videos}}
 		<view class="swiper-box">
-			<swiper class="swiper" :vertical="true">
+			<swiper class="swiper" :vertical="true" @change="changeVideo" @touchstart="touchStart" @touchend="touchEnd">
 				<swiper-item v-for="(item,index) in list" :key="item.id">
 					<view class="swiper-item">
-						<video-player :video="item"></video-player>
+						<video-player @changeClick="changeClick" ref="player" :video="item" :index="index"></video-player>
+					</view>
+					<view class="left-box">
+						<list-left></list-left>
+					</view>
+					<view class="right-box">
+						<list-right ref="right"></list-right>
 					</view>
 				</swiper-item>
 				<!-- <swiper-item>
@@ -19,6 +25,7 @@
 					</view>
 				</swiper-item> -->
 			</swiper>
+			
 		</view>
 	</view>
 </template>
@@ -26,7 +33,10 @@
 <script>
 	
 	import videoPlayer from './videoPlayer.vue'
+	import listLeft from './listLeft.vue'
+	import listRight from './listRight.vue'
 	
+	var timer = null;
 	export default {
 		props:{
 			list:{
@@ -35,17 +45,51 @@
 			}
 		},
 		components:{
-			videoPlayer
+			videoPlayer,listLeft,listRight
 		},
 		data() {
 			return {
-				videos:''
+				videos:'',
+				pageStartY:0,
+				pageEndY:0,
+				page:0
 			};
 		},
 		mounted() {
-			// console.log(this.list );
-			// this.list = this.videos
-			// console.log(this.videos);
+			
+		},
+		methods:{
+			changeVideo(e){
+				clearInterval(timer)
+				this.page = e.detail.current
+				timer = setTimeout(()=>{
+					if(this.pageStartY > this.pageEndY){
+						console.log('向上滑动');
+						this.$refs.player[this.page - 1].pause()
+						this.$refs.player[this.page].player()
+						
+						this.pageStartY = 0;  //防止滑动意外
+						this.pageEndY = 0;
+					}else if(this.pageStartY < this.pageEndY){
+						console.log('向下滑动');
+						this.$refs.player[this.page + 1].pause()
+						this.$refs.player[this.page].player()
+						
+						this.pageStartY = 0;  //防止滑动意外
+						this.pageEndY = 0;
+					}
+				},10)
+
+			},
+			touchStart(e){
+				this.pageStartY = e.changedTouches[0].pageY
+			},
+			touchEnd(e){
+				this.pageEndY = e.changedTouches[0].pageY
+			},
+			changeClick(){
+				this.$refs.right[this.page].changeA()
+			}
 		}
 	}
 </script>
@@ -55,24 +99,16 @@
 		height: 100%;
 		width: 100%;
 	}
-/* 	.swiper-box{
-		height: 100%;
-		width: 100%;
+	.left-box{
+		z-index: 20;
+		position: absolute;
+		left: 20upx;
+		bottom: 100upx;
 	}
-	.swiper{
-		width: 100%;
-		height: 100%;
+	.right-box{
+		z-index: 20;
+		position: absolute;
+		right: 20upx;
+		bottom: 100upx;
 	}
-	swiper-item{
-		width: 100%;
-		height: 100%;
-	}
-	.swiper-item{
-		width: 100%;
-		height: 100%;
-	} */
-/* 	.videoList{
-		height: 100%;
-		width: 100%;
-	} */
 </style>

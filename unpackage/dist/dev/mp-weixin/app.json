@@ -1,7 +1,10 @@
 {
   "pages": [
+    "pages/changeCity/changeCity",
     "pages/index/index",
-    "pages/follow/follow"
+    "pages/follow/follow",
+    "pages/city/city",
+    "pages/changeCity/changeCity"
   ],
   "subPackages": [],
   "window": {

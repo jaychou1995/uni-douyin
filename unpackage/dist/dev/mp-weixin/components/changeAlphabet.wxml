@@ -1,0 +1,1 @@
+<view class="changeAlphabet"><view class="list"><block wx:for="{{city}}" wx:for-item="cities" wx:for-index="index" wx:key="index"><view class="item" hover-class="hover" data-event-opts="{{[['tap',[['selectInitial',['$0'],[[['city','',index,'initial']]]]]]]}}" bindtap="__e">{{cities.initial}}</view></block></view></view>

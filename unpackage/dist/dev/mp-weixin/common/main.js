@@ -15,10 +15,10 @@ _vue.default.config.productionTip = false;
 
 
 //引入tabbar
-var pageFoot = function pageFoot() {return __webpack_require__.e(/*! import() | components/tabbar */ "components/tabbar").then(__webpack_require__.bind(null, /*! ./components/tabbar.vue */ 29));};
+var pageFoot = function pageFoot() {return __webpack_require__.e(/*! import() | components/tabbar */ "components/tabbar").then(__webpack_require__.bind(null, /*! ./components/tabbar.vue */ 46));};
 _vue.default.component('page-foot', pageFoot);
 //引入nav
-var firstNav = function firstNav() {return __webpack_require__.e(/*! import() | components/first-nav */ "components/first-nav").then(__webpack_require__.bind(null, /*! ./components/first-nav.vue */ 36));};
+var firstNav = function firstNav() {return __webpack_require__.e(/*! import() | components/first-nav */ "components/first-nav").then(__webpack_require__.bind(null, /*! ./components/first-nav.vue */ 53));};
 _vue.default.component('first-nav', firstNav);
 
 _App.default.mpType = 'app';

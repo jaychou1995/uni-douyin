@@ -1,0 +1,22 @@
+
+.changeAlphabet{
+	position: fixed;
+	top: 300rpx;
+	right: 0;
+	z-index: 20;
+	color: #FFFFFF;
+}
+.list{
+	width: 30rpx;
+}
+.item{
+	text-align: center;
+	line-height: 18px;
+	font-size: 12px;
+}
+.hover{
+	line-height: 20px;
+	font-size: 18px;
+	color: #007AFF;
+}
+

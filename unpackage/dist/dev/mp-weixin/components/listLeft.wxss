@@ -1,0 +1,59 @@
+
+.list-left-on.data-v-0c0ada4c{
+	color: #fff;
+	height: 300rpx;
+	margin-left: 20rpx;
+	width: 350rpx;
+	position: relative;
+}
+.author.data-v-0c0ada4c{
+	height: 70rpx;
+	line-height: 35px;
+	font-size: 15px;
+}
+.title.data-v-0c0ada4c{
+	width: 100%;
+	line-height: 20px;
+	font-size: 12px;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
+.box.data-v-0c0ada4c{
+	width: 200rpx;
+	overflow: hidden;
+	position: absolute;
+	bottom: 6rpx;
+	left: 0;
+}
+.music.data-v-0c0ada4c{
+	width: 280rpx;
+	height: 70rpx;
+	line-height: 35px;
+	font-size: 12px;
+	-webkit-animation: music-data-v-0c0ada4c 4s linear 0.2s infinite;
+	        animation: music-data-v-0c0ada4c 4s linear 0.2s infinite;
+}
+@-webkit-keyframes music-data-v-0c0ada4c{
+0%{
+		-webkit-transform: translate3d(80%,0,0);
+		        transform: translate3d(80%,0,0)
+}
+100%{
+		-webkit-transform: translate3d(-80%,0,0);
+		        transform: translate3d(-80%,0,0)
+}
+}
+@keyframes music-data-v-0c0ada4c{
+0%{
+		-webkit-transform: translate3d(80%,0,0);
+		        transform: translate3d(80%,0,0)
+}
+100%{
+		-webkit-transform: translate3d(-80%,0,0);
+		        transform: translate3d(-80%,0,0)
+}
+}
+
+

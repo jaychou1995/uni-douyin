@@ -1,1 +1,1 @@
-<view class="videoPlayer data-v-49557492"><video class="video data-v-49557492" src="{{video.src}}" loop="{{true}}" controls="{{false}}"></video></view>
+<view class="videoPlayer data-v-49557492"><video class="video data-v-49557492" id="myVideo" src="{{video.src}}" loop="{{true}}" controls="{{false}}" autoplay="{{autoplay}}" data-event-opts="{{[['tap',[['clickVideo',['$event']]]],['dblclick',[['dbClickVideo',['$event']]]]]}}" bindtap="__e" binddblclick="__e"></video></view>
