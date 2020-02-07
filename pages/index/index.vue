@@ -18,25 +18,23 @@
 		data() {
 			return {
 				title: 'Hello',
-				list:[
-					{id:1,src:'/static/video/2-6.mp4'},
-					{id:2,src:'/static/video/2-7.mp4'},
-					{id:3,src:'/static/video/3-1.mp4'},
-					{id:4,src:'/static/video/3-2.mp4'},
-					{id:5,src:'/static/video/3-3.mp4'},
-					{id:6,src:'/static/video/3-4.mp4'},
-				]
+				list:[]
 			}
 		},
 		onLoad() {
-			// this.getVideos()
+			this.getVideos()
 			// console.log(this.list);
 		},
 		methods: {
 			getVideos(){
-				// uni.request({
-				// 	url:
-				// })
+				uni.request({
+					url:'http://127.0.0.1:8088/static/json/videos.json',
+					method:'GET',
+					success: (res) => {
+						this.list = res.data.list
+						console.log(this.list);
+					}
+				})
 			}
 		}
 	}

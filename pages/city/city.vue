@@ -16,8 +16,11 @@
 		},
 		data() {
 			return {
-				
+				cityName:'北京'
 			}
+		},
+		onShow() {
+			
 		},
 		methods: {
 			

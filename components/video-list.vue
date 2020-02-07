@@ -81,11 +81,11 @@
 				},10)
 
 			},
-			touchStart(e){
-				this.pageStartY = e.changedTouches[0].pageY
+			touchStart(res){
+				this.pageStartY = res.changedTouches[0].pageY
 			},
-			touchEnd(e){
-				this.pageEndY = e.changedTouches[0].pageY
+			touchEnd(res){
+				this.pageEndY = res.changedTouches[0].pageY
 			},
 			changeClick(){
 				this.$refs.right[this.page].changeA()

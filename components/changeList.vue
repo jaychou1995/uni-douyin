@@ -7,7 +7,7 @@
 						<text class="iconfont icondingwei"></text>
 						当前城市
 					</view>
-					<view class="current-city">北京</view>
+					<view class="current-city">{{cityName}}</view>
 				</view>
 				<view class="box">
 					<view class="title">热门城市</view>
@@ -17,7 +17,7 @@
 				</view>
 				<view class="box-list" v-for="(cities,index) in city" :key="index">
 					<view class="initial" :id="cities.initial">{{cities.initial}}</view>
-					<view class="city-name" v-for="item of cities.list">
+					<view class="city-name" v-for="item of cities.list" @click="click(item.name)">
 						{{item.name}}
 					</view>
 				</view>
@@ -43,8 +43,38 @@
 		data() {
 			return {
 				list:['北京','深圳','上海','南京','广州','香港','武汉','重庆','西安','成都','昆明','大连'],
-				viewId:''
+				viewId:'',
+				cityName:'北京'
 			};
+		},
+		onshow() {
+			uni.getStorage({
+				key:'city',
+				success:(res)=>{
+					if(res.data.length>0){
+						this.cityName = res.data
+					}
+				}
+			})
+		},
+		methods:{
+			click(res){
+				uni.setStorage({
+					key:'city',
+					data:res
+				})
+				uni.getStorage({
+					key:'city',
+					success:(res)=>{
+						if(res.data.length>0){
+							this.cityName = res.data
+						}
+					}
+				})
+				uni.redirectTo({
+					url:'/pages/city/city'
+				})
+			}
 		},
 		watch:{
 			letter(){

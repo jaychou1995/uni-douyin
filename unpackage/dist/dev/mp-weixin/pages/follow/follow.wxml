@@ -1,1 +1,1 @@
-<view>关注页面</view>
+<view class="follow"><follow-nav vue-id="1" page="{{page}}" bind:__l="__l"></follow-nav><follow-list vue-id="2" list="{{list}}" bind:__l="__l"></follow-list><page-foot vue-id="3" bgColor="{{block}}" bind:__l="__l"></page-foot></view>

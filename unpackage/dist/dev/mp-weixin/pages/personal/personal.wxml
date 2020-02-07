@@ -1,0 +1,1 @@
+<view class="personal"><personal-info vue-id="1" bind:__l="__l"></personal-info><personal-list vue-id="2" list="{{list}}" bind:__l="__l"></personal-list><page-foot vue-id="3" bgColor="{{block}}" bind:__l="__l"></page-foot></view>

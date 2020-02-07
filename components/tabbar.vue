@@ -1,26 +1,44 @@
 <template>
-	<view class="tabbar">
-		<view class="tabbar-item">
+	<view class="tabbar" :style="tabbar_bg">
+		<navigator open-type="switchTab" url="/pages/index/index" class="tabbar-item">
 			首页
-		</view>
-		<view class="tabbar-item">
+		</navigator>
+		<navigator open-type="switchTab" url="/pages/follow/follow" class="tabbar-item">
 			关注
-		</view>
+		</navigator>
 		<view class="tabbar-item">
 			<view class="iconfont iconjiahao icon-box">
 				
 			</view>
 		</view>
-		<view class="tabbar-item">
+		<navigator open-type="switchTab" url="/pages/news/news" class="tabbar-item">
 			消息
-		</view>
-		<view class="tabbar-item">
+		</navigator>
+		<navigator open-type="switchTab" url="/pages/personal/personal" class="tabbar-item">
 			我的
-		</view>
+		</navigator>
 	</view>
 </template>
 
 <script>
+	export default{
+		props:{
+			bgColor:{
+				type:String,
+				default:''
+			}
+		},
+		data(){
+			return{
+				tabbar_bg:''
+			}
+		},
+		mounted() {
+			if(this.bgColor.length>0){
+				this.tabbar_bg = 'background-color: '+this.bgColor+';'
+			}
+		}
+	}
 </script>
 
 <style scoped>

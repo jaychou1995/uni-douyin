@@ -1,0 +1,1 @@
+<view class="news"><news-nav vue-id="1" bind:__l="__l"></news-nav><news-content vue-id="2" bind:__l="__l"></news-content><page-foot vue-id="3" bgColor="{{block}}" bind:__l="__l"></page-foot></view>

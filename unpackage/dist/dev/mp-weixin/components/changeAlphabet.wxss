@@ -1,13 +1,13 @@
 
 .changeAlphabet{
 	position: fixed;
-	top: 300rpx;
+	top: 150px;
 	right: 0;
 	z-index: 20;
 	color: #FFFFFF;
 }
 .list{
-	width: 30rpx;
+	width: 15px;
 }
 .item{
 	text-align: center;

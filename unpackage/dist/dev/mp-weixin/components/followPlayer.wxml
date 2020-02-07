@@ -1,0 +1,1 @@
+<view class="followPlayer"><video class="video" id="myFollowPlay" objectFit="cover" src="{{'http://127.0.0.1:8088/static/video/'+item.src}}" controls loop="true"></video></view>

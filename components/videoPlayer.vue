@@ -3,12 +3,11 @@
 		<video 
 		id="myVideo"
 		class="video" 
-		:src="video.src" 
+		:src="'http://127.0.0.1:8088/static/video/'+video.src"
 		:loop="true"
 		:controls="false"
 		:autoplay="autoplay"
 		@click="clickVideo"
-		@dblclick="dbClickVideo"
 		></video>
 	</view>
 </template>
@@ -29,7 +28,6 @@
 		data() {
 			return {
 				autoplay:false,
-				videoContext:'',
 				play:false,
 				dblClick:false,
 			};
@@ -37,13 +35,13 @@
 		created() {
 			this.auto()
 		},
-		mounted() {
-			this.videoContext = uni.createVideoContext('myVideo',this)
-			// this.player()
-		},
-		// onReady() {
+		// mounted() {
 		// 	this.videoContext = uni.createVideoContext('myVideo',this)
+		// 	// this.player()
 		// },
+		onReady() {
+			this.videoContext = uni.createVideoContext('myVideo',this)
+		},
 		methods:{
 			player(){
 				if(this.play === false){
@@ -61,9 +59,10 @@
 
 			},
 			playThis(){
-				if(this.play === false){
+				//播放当前视频
+				if(this.play===false){
 					this.videoContext.play()
-					this.play = true
+					this.play=true
 				}
 			},
 			clickVideo(){
@@ -88,8 +87,8 @@
 			},
 			auto(){
 				if(this.index === 0){
-					console.log('ddd');
 					this.autoplay = true
+					this.play =  true
 				}
 			}
 		}

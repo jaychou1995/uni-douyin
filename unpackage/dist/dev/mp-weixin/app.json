@@ -1,10 +1,15 @@
 {
   "pages": [
-    "pages/changeCity/changeCity",
     "pages/index/index",
+    "pages/changeCity/changeCity",
     "pages/follow/follow",
     "pages/city/city",
-    "pages/changeCity/changeCity"
+    "pages/friend/friend",
+    "pages/news/news",
+    "pages/personal/personal",
+    "pages/changeInfo/changeInfo",
+    "pages/modify/modify",
+    "pages/user/user"
   ],
   "subPackages": [],
   "window": {
@@ -21,6 +26,15 @@
       },
       {
         "pagePath": "pages/follow/follow"
+      },
+      {
+        "pagePath": "pages/friend/friend"
+      },
+      {
+        "pagePath": "pages/news/news"
+      },
+      {
+        "pagePath": "pages/personal/personal"
       }
     ]
   },

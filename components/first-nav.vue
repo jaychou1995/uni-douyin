@@ -2,8 +2,8 @@
 	<view class="firstNav">
 		<view class="iconfont iconsousuo icon-search"></view>
 		<view class="middle">
-			<view class="text">推荐</view>
-			<view class="text">同城</view>
+			<navigator open-type="switchTab" url="/pages/index/index" class="text">推荐</navigator>
+			<navigator  url="/pages/city/city" class="text">同城</navigator>
 		</view>
 	</view>
 </template>

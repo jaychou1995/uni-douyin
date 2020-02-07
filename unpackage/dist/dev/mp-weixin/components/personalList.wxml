@@ -1,0 +1,1 @@
+<view><view class="personalList"><view class="item"><video class="video" src="{{'http://127.0.0.1:8088/static/video/'+src}}" objectFit="cover" loop="{{false}}" autoplay="{{false}}" controls="{{false}}"></video><view class="love-box"><text class="iconfont iconicon-test love-icon">12w</text></view></view></view><view class="more">没有更多了</view><view class="ground"></view></view>

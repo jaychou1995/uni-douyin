@@ -1,0 +1,141 @@
+
+.ground{
+		width: 100%;
+		height: 50px;
+		background: #000000;
+}
+.followList{
+	margin-top: 10px;
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100rpx;
+}
+.item{
+	height: 550px;
+	padding: 0 50rpx;
+}
+.top{
+	height: 35px;
+}
+.img-box{
+	float: left;
+}
+.img{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+.author-name{
+	float: left;
+	font-size: 13px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 10px;
+}
+.share{
+	float: right;
+	font-size: 15px;
+	margin-right: 5px;
+	height: 35px;
+	line-height: 35px;
+}
+.title{
+	width: 100%;
+	font-size: 14px;
+	margin-top: 15px;
+	height: 25px;
+	line-height: 25px;
+}
+.video-box{
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
+.video{
+	width: 80%;
+	height: 100%;
+	z-index: 19;
+}
+.music-box{
+	z-index: 20;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	bottom: 10px;
+	width: 100px;
+	overflow: hidden;
+}
+.music{
+	font-size: 13px;
+	width: 200px;
+	-webkit-animation: music 4s linear infinite;
+	        animation: music 4s linear infinite;
+}
+.box{
+	height: 25px;
+	margin-top: 25px;
+}
+.left{
+	float: left;
+	font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+}
+.right{
+	float: right;
+	height: 25px;
+}
+.icon{
+	float: right;
+	font-size: 18px;
+	margin-left: 10px;
+}
+.text{
+	padding: 0 5px;
+	font-size: 13px;
+}
+.number{
+	width: 100%;
+	height: 25px;
+	font-size: 13px;
+	line-height: 13px;
+	color: #AAAAAA;
+}
+.comment-box{
+	height: 30px;
+	position: relative;
+}
+.icon-pen{
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.input-box{
+	margin-left: 28px;
+	font-size: 15px;
+}
+@-webkit-keyframes music{
+0%{
+		-webkit-transform: translate3d(80%,0,0);
+		        transform: translate3d(80%,0,0);
+}
+100%{
+		-webkit-transform: translate3d(-80%,0,0);
+		        transform: translate3d(-80%,0,0);
+}
+}
+@keyframes music{
+0%{
+		-webkit-transform: translate3d(80%,0,0);
+		        transform: translate3d(80%,0,0);
+}
+100%{
+		-webkit-transform: translate3d(-80%,0,0);
+		        transform: translate3d(-80%,0,0);
+}
+}
+
+

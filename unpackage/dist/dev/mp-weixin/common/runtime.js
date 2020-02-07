@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/first-nav":1,"components/tabbar":1,"components/changeAlphabet":1,"components/changeHeader":1,"components/changeList":1,"components/video-list":1,"components/cityContent":1,"components/listLeft":1,"components/listRight":1,"components/videoPlayer":1};
+/******/ 		var cssChunks = {"components/first-nav":1,"components/tabbar":1,"components/video-list":1,"components/changeAlphabet":1,"components/changeHeader":1,"components/changeList":1,"components/follow-nav":1,"components/followList":1,"components/cityContent":1,"components/newsContent":1,"components/newsNav":1,"components/personalInfo":1,"components/personalList":1,"components/listLeft":1,"components/listRight":1,"components/videoPlayer":1,"components/followPlayer":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/first-nav":"components/first-nav","components/tabbar":"components/tabbar","components/changeAlphabet":"components/changeAlphabet","components/changeHeader":"components/changeHeader","components/changeList":"components/changeList","components/video-list":"components/video-list","components/cityContent":"components/cityContent","components/listLeft":"components/listLeft","components/listRight":"components/listRight","components/videoPlayer":"components/videoPlayer"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/first-nav":"components/first-nav","components/tabbar":"components/tabbar","components/video-list":"components/video-list","components/changeAlphabet":"components/changeAlphabet","components/changeHeader":"components/changeHeader","components/changeList":"components/changeList","components/follow-nav":"components/follow-nav","components/followList":"components/followList","components/cityContent":"components/cityContent","components/newsContent":"components/newsContent","components/newsNav":"components/newsNav","components/personalInfo":"components/personalInfo","components/personalList":"components/personalList","components/listLeft":"components/listLeft","components/listRight":"components/listRight","components/videoPlayer":"components/videoPlayer","components/followPlayer":"components/followPlayer"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

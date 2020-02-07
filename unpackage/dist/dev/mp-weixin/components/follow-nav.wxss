@@ -1,0 +1,40 @@
+
+.ground.data-v-c08eac48{
+	width: 100%;
+	height: 120rpx;
+}
+.firstNav.data-v-c08eac48{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	position: fixed;
+	top: 25px;
+	
+	left: 0;
+	z-index: 999;
+}
+.icon-foll.data-v-c08eac48{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	width: 20%;
+	text-align: center;
+	font-size: 16px;
+}
+.icon-val.data-v-c08eac48{
+	font-size: 16px;
+	margin-left: 20rpx;
+}
+.middle.data-v-c08eac48{
+	text-align: center;
+}
+.text.data-v-c08eac48{
+	display: inline;
+	color: #fff;
+	margin: 0 10px;
+}
+.active.data-v-c08eac48{
+	border-bottom: 2px solid #F0AD4E
+}
+

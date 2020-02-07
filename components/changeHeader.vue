@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="changeHeader">
-			<view class="iconfont iconchahao left"></view>
+			<navigator class="iconfont iconchahao left" open-type="navigateBack"></navigator>
 			<view class="title">切换城市</view>
 		</view>
 		<view class="ground"></view>

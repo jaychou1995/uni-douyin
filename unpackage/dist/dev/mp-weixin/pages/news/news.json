@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "news-nav": "/components/newsNav",
+    "news-content": "/components/newsContent"
+  }
+}

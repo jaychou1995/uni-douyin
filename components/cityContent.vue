@@ -2,16 +2,16 @@
 	<view class="cityContent">
 		<view class="conlation">
 			<view class="iconfont icondingwei conlation-left">
-				自动定位：南京
+				自动定位：{{cityName}}
 			</view>
-			<view class="conlation-right">
+			<navigator class="conlation-right" open-type="navigate" url="/pages/changeCity/changeCity">
 				切换<text class="iconfont iconchangyongicon-"></text>
-			</view>
+			</navigator>
 		</view>
 		<view class="video-list">
 			<view class="item">
 				<view class="video">
-					<video class="video-in" src="/static/video/3-1.mp4" controls></video>
+					<video class="video-in" src="http://127.0.0.1:8088/static/video/3-1.mp4" controls></video>
 				</view>
 				<view class="img">
 					<image class="image-box" src="/static/img/author.jpg"></image>
@@ -20,7 +20,7 @@
 			
 			<view class="item">
 				<view class="video">
-					<video class="video-in" src="/static/video/3-1.mp4" controls></video>
+					<video class="video-in" src="http://127.0.0.1:8088/static/video/3-1.mp4" controls></video>
 				</view>
 				<view class="img">
 					<image class="image-box" src="/static/img/author.jpg"></image>
@@ -29,7 +29,7 @@
 			
 			<view class="item">
 				<view class="video">
-					<video class="video-in" src="/static/video/3-1.mp4" controls></video>
+					<video class="video-in" src="http://127.0.0.1:8088/static/video/3-1.mp4" controls></video>
 				</view>
 				<view class="img">
 					<image class="image-box" src="/static/img/author.jpg"></image>
@@ -44,8 +44,23 @@
 	export default {
 		data() {
 			return {
-				
+				cityName:'北京'
 			};
+		},
+		mounted() {
+			uni.getStorage({
+				key:'city',
+				success:(res)=>{
+					if(res.data.length>0){
+						this.cityName = res.data
+					}
+				}
+			})
+		},
+		watch:{
+			cityName(nval,oval){
+				console.log(nval,oval);
+			}
 		}
 	}
 </script>

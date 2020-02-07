@@ -1,16 +1,16 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-		    "path" : "pages/changeCity/changeCity",
-		    "style" : {}
-		},
-		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
-		}
-	    ,{
+		},
+		{
+		    "path" : "pages/changeCity/changeCity",
+		    "style" : {}
+		},
+	    {
             "path" : "pages/follow/follow",
             "style" : {}
         },
@@ -19,7 +19,27 @@
 		    "style" : {}
 		},
 		{
-		    "path" : "pages/changeCity/changeCity",
+		    "path" : "pages/friend/friend",
+		    "style" : {}
+		}
+        ,{
+            "path" : "pages/news/news",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/personal/personal",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/changeInfo/changeInfo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/modify/modify",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/user/user",
 		    "style" : {}
 		}
     ],
@@ -33,7 +53,10 @@
 	"tabBar":{
 		"list":[
 		{"pagePath":"pages/index/index"},
-		{"pagePath":"pages/follow/follow"}
+		{"pagePath":"pages/follow/follow"},
+		{"pagePath":"pages/friend/friend"},
+		{"pagePath":"pages/news/news"},
+		{"pagePath":"pages/personal/personal"}
 	]
 	}
 }
